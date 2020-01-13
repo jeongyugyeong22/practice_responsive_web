@@ -32,7 +32,7 @@
                             </h1>
                         </div>
                         <div id ="mNav">
-                            <h2 class="ir_so">메가박스 전체 메뉴</h2>
+                            <h2 class="ir_so">전체메뉴</h2>
                             <a href="#" class = "ham"><span></span></a>
                         </div>
                         <div class="header_right">
@@ -53,7 +53,30 @@
                 </div>
             </div>
             <div class="slider">
-                <img src="assets/img/slider_photo.png" alt="slider_photo">
+                <div class="Slider-container">
+                    <div class = "Slider">
+                        <img src="assets/img/slider_photo.png" alt="slider_photo">
+                    </div>
+                    <div class = "Slider">
+                        <img src="assets/img/slider_photo2.png" alt="slider_photo2">
+                    </div>
+                    <div class = "Slider">
+                        <img src="assets/img/slider_photo3.png" alt="slider_photo3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)"><img src="assets/img/slider_left.png"></a>
+                    <a class="next" onclick="plusSlides(1)"><img src="assets/img/slider_right.png"></a>
+                </div>
+                </div>
+            </div>
+            <div class="dotstyle" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="descript">
+                <div class ="row">
+                    <h2>Unique and Modern Design</h2>
+                </div>
             </div>
         </header>
 
@@ -61,5 +84,6 @@
         <script src = "assets/js/jquery.min_1.12.4.js"></script>
         <script src = "assets/js/modernizr-custom.js"></script>
         <script src = "assets/js/ie-checker.js"></script>
+        <script src = "assets/js/slider.js"></script>
     </body>
 </html>
