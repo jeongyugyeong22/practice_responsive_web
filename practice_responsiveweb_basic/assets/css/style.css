@@ -49,22 +49,27 @@
 .header_menu .header_right ul li a {display: block; padding: 49px 30px 0px 0px; font-size: 15px; font-weight: 200; font-family: 'Montserrat'; color: #ffffff;}
 .header_menu .header_right ul li a:hover {color: #c1ad95;}
 
-/* 미디어 쿼리 */
+.slider .Slider-container { max-width: 100%; margin: auto;}
+.slider .Slider-container .prev { cursor: pointer; position: absolute; top: 40%; width: auto; padding: 16px; left: 91px; transition: 0.6s ease;}
+.slider .Slider-container .next {cursor: pointer; position: absolute; top: 40%; width: auto; padding: 16px; right: 91px; transition: 0.6s ease;}
+.dotstyle { overflow: hidden; position: absolute; left: 0; top: 90%; width: 100%; height: 100px; }
+.dotstyle .dot { cursor: pointer; height: 15px; width: 15px; margin : 0 7px; background-color: #949493; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+.dotstyle .dot:hover { height: 12px; width: 12px; background-color: rgba( 255, 255, 255, 0 ); border: 2px solid #d3c1ad;}
 
+/* 미디어 쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
-    .header_menu .header_right ul li {width: 93px;}
-    .header_menu .header_right ul li a {font-size: 14px; padding: 49px 10px 0 0;}
+    .header_menu .header_right ul li {width: 100px;}
+    .header_menu .header_right ul li a {font-size: 14px; padding: 49px 30px 0 0;}
     .header_menu .header_left h1 em {padding: 24px 3px 0 0;}
     .header_menu .header_left h1 strong {top: 43px;}
 }
 
-@media (max-width: 1144px){
+@media (max-width: 1208px){
     #mNav {display: block;}
     .header_menu .header_right {display: none;}
-    .row {padding: 0 24px;}
-    .header_menu .header_left h1 em{ padding: 24px 3px 0 0; display: inline-block;}
-    .header_menu .header_left h1 strong{ display: block; position: absolute; left: 90px; top:40px; }
+    .row {padding: 0 28px;}
+    .header_menu .header_left h1 strong{ display: block; position: absolute; left: 92px; top:43px; }
 }
 
 @media (max-width: 960px){
@@ -72,10 +77,9 @@
 }
 
 @media (max-width: 768px){
-    .row {padding: 0 16px;}
-    #mNav {right: 6px;}
-    .header h1 {text-align: left;}
-    .header h1 strong {display: none;}
+    .row {padding: 0 24px;}
+    #mNav {right: 14px;}
+    .header_menu .header_left h1 strong {display: block; position: absolute; left: 86px; top:43px;}
 }
 
 @media (max-width: 480px){
